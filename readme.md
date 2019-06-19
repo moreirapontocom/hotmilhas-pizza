@@ -1,6 +1,6 @@
 Framwork: Lumen
 
-ENDPOINTS:
+** ENDPOINTS:
 
 GET /pizzas
 POST /pizzas/create
@@ -11,3 +11,9 @@ GET /customers
 
 GET /orders
 POST /orders/create
+
+
+** STEPS
+
+* Configure the .env file
+* Run: php artisan migrate to create migrations
