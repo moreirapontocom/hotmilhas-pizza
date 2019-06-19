@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+use \App\Order;
+
 class Customer extends Model
 {
 
@@ -26,4 +28,9 @@ class Customer extends Model
     protected $hidden = [
         'deleted_at',
     ];
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class)->with('orders_pizzas');
+    }
 }

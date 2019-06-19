@@ -8,7 +8,7 @@ class CustomerController extends Controller
 {
     public function listAll()
     {
-        $customers = Customer::orderBy('name', 'ASC')->get();
+        $customers = Customer::with('orders')->orderBy('name', 'ASC')->get();
 
         return ['customers' => $customers];
     }

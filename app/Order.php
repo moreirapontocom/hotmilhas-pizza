@@ -38,4 +38,9 @@ class Order extends Model
     {
         return $this->belongsTo(Pizza::class);
     }
+
+    public function orders_pizzas()
+    {
+        return $this->hasOne(Pizza::class, 'id', 'pizza_id');
+    }
 }
