@@ -2,6 +2,8 @@ Framwork: Lumen
 
 ** ENDPOINTS:
 
+POSTMAN Collection: https://www.getpostman.com/collections/335dbb9667a1d5435c46
+
 GET /pizzas
 POST /pizzas/create
 POST /pizzas/edit
